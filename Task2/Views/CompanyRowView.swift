@@ -19,7 +19,18 @@ struct CompanyRowView: View {
             Spacer()
             if let cashback = company.cashback {
                 Text("\(cashback) %")
-                    .padding()
+                    .frame(width: 60, height: 30)
+                    .background(.blue)
+                    .foregroundColor(.white)
+                    .cornerRadius(15)
+                    
+            }
+        }
+        .navigationTitle("Мобильные операторы")
+        .toolbar {
+            HStack {
+                Spacer()
+                Image(systemName: "magnifyingglass")
             }
         }
     }

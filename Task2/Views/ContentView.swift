@@ -8,9 +8,16 @@
 import SwiftUI
 
 struct ContentView: View {
+    @StateObject var mobileVM = CompaniesViewModel()
+    
+    
     var body: some View {
-        Text("Hello, world!")
-            .padding()
+        VStack {
+            ForEach(mobileVM.companies, id: \.self) { company in
+                CompanyRowView(company: company)
+            }
+        }
+        .padding(.horizontal)
     }
 }
 

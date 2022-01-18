@@ -26,13 +26,6 @@ struct CompanyRowView: View {
                     
             }
         }
-        .navigationTitle("Мобильные операторы")
-        .toolbar {
-            HStack {
-                Spacer()
-                Image(systemName: "magnifyingglass")
-            }
-        }
     }
 }
 

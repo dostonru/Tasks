@@ -12,12 +12,30 @@ struct CompaniesView: View {
     
     
     var body: some View {
-        VStack {
-            ForEach(mobileVM.companies) { company in
-                CompanyRowView(company: company)
+        NavigationView {
+            ScrollView {
+                VStack {
+                    ForEach(mobileVM.companies) { company in
+                        CompanyRowView(company: company)
+                    }
+                    Spacer()
+                }.toolbar {
+                    HStack(alignment: .center){
+                        Text("Мобильные операторы")
+                            .font(.title2)
+                            .fontWeight(.bold)
+                            .padding(.trailing, 20)
+                        Image(systemName: "magnifyingglass")
+                    }
+                }
+                
             }
+            .padding(.horizontal)
+           
+            
         }
-        .padding(.horizontal)
+        
+        
     }
 }
 

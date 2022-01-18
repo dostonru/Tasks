@@ -11,7 +11,7 @@ struct MenuItemView: View {
     @State var menuItem: MenuItems
     
     var body: some View {
-        HStack(alignment:.bottom) {
+        HStack(alignment: .top) {
             Image(systemName: menuItem.icon)
                 .padding(.trailing, 10)
             Text(menuItem.name)

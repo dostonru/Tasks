@@ -20,17 +20,17 @@ struct MainView: View {
                         Divider()
                     }
                     .padding(.horizontal)
+                    Spacer()
                 }
+                
             }
             .toolbar {
-                VStack() {
-                    HStack {
-                        Text("Оплата")
-                            .font(.title)
-                            .fontWeight(.bold)
-                            .padding(.horizontal, 95)
-                        Image(systemName: "magnifyingglass")
-                    }
+                HStack(alignment: .center){
+                    Text("Оплата")
+                        .font(.title)
+                        .fontWeight(.bold)
+                        .padding(.trailing, 95)
+                    Image(systemName: "magnifyingglass")
                 }
             }
         }

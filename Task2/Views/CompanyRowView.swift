@@ -14,7 +14,7 @@ struct CompanyRowView: View {
             Image(company.imageName)
                 .resizable()
                 .frame(maxWidth: 30, maxHeight: 30)
-                .padding()
+                .padding(.horizontal)
             Text(company.name)
             Spacer()
             if let cashback = company.cashback {

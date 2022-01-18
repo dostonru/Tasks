@@ -19,9 +19,13 @@ struct CompaniesView: View {
                 VStack {
                     ForEach(mobileVM.companies) { company in
                         CompanyRowView(company: company)
+                            .padding(.vertical, 10)
+                        Divider()
                     }
                     Spacer()
                 }
+                .offset(y: -30)
+                
             }
             .toolbar {
                 ToolbarItem(placement: .navigationBarLeading) {

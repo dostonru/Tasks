@@ -15,7 +15,7 @@ struct MenuItemView: View {
             Image(systemName: menuItem.icon)
                 .padding(.trailing, 10)
             Text(menuItem.name)
-                .padding(.horizontal)
+                
         }
         .padding()
     }

@@ -26,6 +26,7 @@ struct CompanyRowView: View {
                     
             }
         }
+
     }
 }
 

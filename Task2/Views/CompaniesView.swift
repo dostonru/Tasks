@@ -8,6 +8,8 @@
 import SwiftUI
 
 struct CompaniesView: View {
+    
+    @Environment(\.presentationMode) var presentationMode
     @StateObject var mobileVM = CompaniesViewModel()
     
     
@@ -19,8 +21,16 @@ struct CompaniesView: View {
                         CompanyRowView(company: company)
                     }
                     Spacer()
-                }.toolbar {
+                }
+            }
+            .toolbar {
+                ToolbarItem(placement: .navigationBarLeading) {
                     HStack(alignment: .center){
+                        Image(systemName: "chevron.backward")
+                            .padding()
+                            .onTapGesture {
+                                presentationMode.wrappedValue.dismiss()
+                            }
                         Text("Мобильные операторы")
                             .font(.title2)
                             .fontWeight(.bold)
@@ -28,7 +38,6 @@ struct CompaniesView: View {
                         Image(systemName: "magnifyingglass")
                     }
                 }
-                
             }
             .padding(.horizontal)
            

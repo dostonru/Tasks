@@ -16,23 +16,26 @@ struct MainView: View {
             ScrollView {
                 VStack(alignment: .leading) {
                     ForEach(menuItemsVM.menu) { item in
-                        MenuItemView(menuItem: item)
+                        CustomNevLink(destination: CompaniesView(), label: {
+                            MenuItemView(menuItem: item)})
+                        
                         Divider()
                     }
                     .padding(.horizontal)
                     Spacer()
                 }
+                .toolbar {
+                    HStack(alignment: .center){
+                        Text("Оплата")
+                            .font(.title)
+                            .fontWeight(.bold)
+                            .padding(.trailing, 95)
+                        Image(systemName: "magnifyingglass")
+                    }
+                }
                 
             }
-            .toolbar {
-                HStack(alignment: .center){
-                    Text("Оплата")
-                        .font(.title)
-                        .fontWeight(.bold)
-                        .padding(.trailing, 95)
-                    Image(systemName: "magnifyingglass")
-                }
-            }
+            
         }
     }
 }

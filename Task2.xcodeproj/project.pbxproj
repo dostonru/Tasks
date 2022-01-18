@@ -17,6 +17,7 @@
 		F9C6612E27975FA4009879A8 /* MainView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F9C6612D27975FA4009879A8 /* MainView.swift */; };
 		F9C6613027975FDA009879A8 /* MenuItems.swift in Sources */ = {isa = PBXBuildFile; fileRef = F9C6612F27975FDA009879A8 /* MenuItems.swift */; };
 		F9C6613227976558009879A8 /* MenuItemView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F9C6613127976558009879A8 /* MenuItemView.swift */; };
+		F9C66134279778A8009879A8 /* CustomNevLink.swift in Sources */ = {isa = PBXBuildFile; fileRef = F9C66133279778A8009879A8 /* CustomNevLink.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -31,6 +32,7 @@
 		F9C6612D27975FA4009879A8 /* MainView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainView.swift; sourceTree = "<group>"; };
 		F9C6612F27975FDA009879A8 /* MenuItems.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MenuItems.swift; sourceTree = "<group>"; };
 		F9C6613127976558009879A8 /* MenuItemView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MenuItemView.swift; sourceTree = "<group>"; };
+		F9C66133279778A8009879A8 /* CustomNevLink.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomNevLink.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -88,6 +90,7 @@
 				F9C661182797550B009879A8 /* CompaniesView.swift */,
 				F9C6612D27975FA4009879A8 /* MainView.swift */,
 				F9C6613127976558009879A8 /* MenuItemView.swift */,
+				F9C66133279778A8009879A8 /* CustomNevLink.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -182,6 +185,7 @@
 				F9C661192797550B009879A8 /* CompaniesView.swift in Sources */,
 				F9C6612E27975FA4009879A8 /* MainView.swift in Sources */,
 				F9C661172797550B009879A8 /* Task2App.swift in Sources */,
+				F9C66134279778A8009879A8 /* CustomNevLink.swift in Sources */,
 				F9C6612A2797566D009879A8 /* CompaniesViewModel.swift in Sources */,
 				F9C6613227976558009879A8 /* MenuItemView.swift in Sources */,
 				F9C6613027975FDA009879A8 /* MenuItems.swift in Sources */,

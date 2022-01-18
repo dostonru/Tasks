@@ -8,7 +8,7 @@
 import SwiftUI
 
 struct CompanyRowView: View {
-    var company: CompaniesModel
+    @State var company: CompaniesModel
     var body: some View {
         HStack {
             Image(company.imageName)

@@ -13,7 +13,7 @@ struct CompaniesView: View {
     
     var body: some View {
         VStack {
-            ForEach(mobileVM.companies, id: \.self) { company in
+            ForEach(mobileVM.companies) { company in
                 CompanyRowView(company: company)
             }
         }
